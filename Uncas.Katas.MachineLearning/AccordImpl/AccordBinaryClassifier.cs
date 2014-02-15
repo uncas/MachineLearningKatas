@@ -9,6 +9,7 @@ namespace Uncas.Katas.MachineLearning.AccordImpl
     /// <summary>
     ///     http://accord.googlecode.com/svn/docs/html/T_Accord_Statistics_Models_Regression_LogisticRegression.htm
     ///     (http://crsouza.blogspot.dk/2010/02/logistic-regression-in-c.html)
+    ///     (http://www.clear-lines.com/blog/post/First-Steps-With-Accord-NET-SVM-in-FSharp.aspx)
     /// </summary>
     public class AccordBinaryClassifier : IBinaryClassifier
     {
