@@ -16,13 +16,13 @@ namespace Uncas.Katas.MachineLearning.Tests
             Tennis[] data = Tennis.GetData();
             Descriptor descriptor = Descriptor.Create<Tennis>();
             var generator = new DecisionTreeGenerator(descriptor);
-            generator.SetHint(false);
+            generator.SetHint(0.5d);
             LearningModel model = Learner.Learn(data, 0.8, 1000, generator);
             var input = new Tennis
             {
-                Outlook = Outlook.Sunny,
-                Temperature = Temperature.High,
-                Windy = true
+                Outlook = Outlook.Overcast,
+                Temperature = 20,
+                Windy = false
             };
             Tennis predict = model.Model.Predict(input);
             Console.WriteLine(predict.Play);

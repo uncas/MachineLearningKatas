@@ -8,13 +8,13 @@ namespace Uncas.Katas.MachineLearning.NumlImpl.Models
         public Outlook Outlook { get; set; }
 
         [Feature]
-        public Temperature Temperature { get; set; }
+        public int Temperature { get; set; }
 
         [Feature]
         public bool Windy { get; set; }
 
         [Label]
-        public bool Play { get; set; }
+        public double Play { get; set; }
 
         public static Tennis[] GetData()
         {
@@ -22,58 +22,93 @@ namespace Uncas.Katas.MachineLearning.NumlImpl.Models
             {
                 new Tennis
                 {
-                    Play = true,
+                    Play = 1d,
                     Outlook = Outlook.Sunny,
-                    Temperature = Temperature.Low,
+                    Temperature = 5,
                     Windy = true
                 },
                 new Tennis
                 {
-                    Play = false,
+                    Play = 0d,
                     Outlook = Outlook.Sunny,
-                    Temperature = Temperature.High,
+                    Temperature = 30,
                     Windy = true
                 },
                 new Tennis
                 {
-                    Play = false,
+                    Play = 0d,
                     Outlook = Outlook.Sunny,
-                    Temperature = Temperature.High,
+                    Temperature = 35,
                     Windy = false
                 },
                 new Tennis
                 {
-                    Play = true,
+                    Play = 1d,
                     Outlook = Outlook.Overcast,
-                    Temperature = Temperature.Low,
+                    Temperature = 10,
                     Windy = true
                 },
                 new Tennis
                 {
-                    Play = true,
+                    Play = 1d,
                     Outlook = Outlook.Overcast,
-                    Temperature = Temperature.High,
+                    Temperature = 25,
                     Windy = false
                 },
                 new Tennis
                 {
-                    Play = true,
+                    Play = 1d,
                     Outlook = Outlook.Overcast,
-                    Temperature = Temperature.Low,
+                    Temperature = 10,
                     Windy = false
                 },
                 new Tennis
                 {
-                    Play = false,
+                    Play = 0d,
                     Outlook = Outlook.Rainy,
-                    Temperature = Temperature.Low,
+                    Temperature = 2,
                     Windy = true
                 },
                 new Tennis
                 {
-                    Play = true,
+                    Play = 1d,
                     Outlook = Outlook.Rainy,
-                    Temperature = Temperature.Low,
+                    Temperature = 14,
+                    Windy = false
+                },
+                new Tennis
+                {
+                    Play = 0d,
+                    Outlook = Outlook.Rainy,
+                    Temperature = 8,
+                    Windy = true
+                },
+                new Tennis
+                {
+                    Play = 1d,
+                    Outlook = Outlook.Rainy,
+                    Temperature = 18,
+                    Windy = true
+                },
+                new Tennis
+                {
+                    Play = 0d,
+                    Outlook = Outlook.Rainy,
+                    Temperature = 19,
+                    Windy = true
+                },
+                new Tennis
+                {
+                    Play = 1d,
+                    Outlook = Outlook.Rainy,
+                    Temperature = 14,
+                    Windy = false
+                },
+                new Tennis
+                {
+                    Play = 1d,
+                    Outlook = Outlook.Rainy,
+                    Temperature = 14,
                     Windy = false
                 }
             };
