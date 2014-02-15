@@ -50,14 +50,30 @@
     <Reference Include="AForge.Math">
       <HintPath>..\packages\AForge.Math.2.2.5\lib\AForge.Math.dll</HintPath>
     </Reference>
+    <Reference Include="LibLinear">
+      <HintPath>..\packages\Sharpkit.Learn.0.2.0\lib\net40\LibLinear.exe</HintPath>
+    </Reference>
+    <Reference Include="Libsvm">
+      <HintPath>..\packages\Sharpkit.Learn.0.2.0\lib\net40\Libsvm.dll</HintPath>
+    </Reference>
+    <Reference Include="MathNet.Numerics">
+      <HintPath>..\packages\MathNet.Numerics.2.6.2\lib\net40\MathNet.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="MathNet.Numerics.IO">
+      <HintPath>..\packages\MathNet.Numerics.2.6.2\lib\net40\MathNet.Numerics.IO.dll</HintPath>
+    </Reference>
     <Reference Include="numl">
       <HintPath>..\packages\numl.0.7.5\lib\net40\numl.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>..\packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
     </Reference>
+    <Reference Include="Sharpkit.Learn">
+      <HintPath>..\packages\Sharpkit.Learn.0.2.0\lib\net40\Sharpkit.Learn.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -71,6 +87,7 @@
     <Compile Include="NumlImpl\Models\Outlook.cs" />
     <Compile Include="NumlImpl\Models\Temperature.cs" />
     <Compile Include="NumlImpl\Models\Tennis.cs" />
+    <Compile Include="SharpkitLearnImpl\TryItOut.cs" />
     <Compile Include="Tests\BinaryClassifierTests.cs" />
     <Compile Include="Classification\KnownFacts.cs" />
     <Compile Include="Classification\KnownSample.cs" />
