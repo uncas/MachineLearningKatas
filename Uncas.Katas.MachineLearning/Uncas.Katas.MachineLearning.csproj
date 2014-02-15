@@ -50,6 +50,9 @@
     <Reference Include="AForge.Math">
       <HintPath>..\packages\AForge.Math.2.2.5\lib\AForge.Math.dll</HintPath>
     </Reference>
+    <Reference Include="numl">
+      <HintPath>..\packages\numl.0.7.5\lib\net40\numl.dll</HintPath>
+    </Reference>
     <Reference Include="nunit.framework">
       <HintPath>..\packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
     </Reference>
@@ -65,6 +68,9 @@
     <Compile Include="AccordImpl\AccordBinaryClassifier.cs" />
     <Compile Include="Classification\Feature.cs" />
     <Compile Include="Classification\IBinaryClassifier.cs" />
+    <Compile Include="NumlImpl\Models\Outlook.cs" />
+    <Compile Include="NumlImpl\Models\Temperature.cs" />
+    <Compile Include="NumlImpl\Models\Tennis.cs" />
     <Compile Include="Tests\BinaryClassifierTests.cs" />
     <Compile Include="Classification\KnownFacts.cs" />
     <Compile Include="Classification\KnownSample.cs" />
@@ -72,6 +78,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Classification\Sample.cs" />
     <Compile Include="Classification\UnknownSample.cs" />
+    <Compile Include="Tests\NumlSample.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
